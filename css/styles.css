@@ -1,0 +1,12 @@
+.temp_display {
+  display: block;
+}
+
+@media screen and (min-width: 1023px) {
+  .temp_display {
+    display: flex;
+  }
+  .section {
+    max-width: 1023px;
+  }
+}

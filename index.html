@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- ABOUT -->
-    <section style="width: 1023px; margin: 0 auto; color: #6f6864">
+    <section class="section" style="margin: 0 auto; color: #6f6864">
       <h3 style="text-align: center">IHRE IMMOBILIENMAKLERIN IN LÖHNE</h3>
-      <div style="display: flex; padding: 20px" class="wrapper_container">
+      <div class="temp_display" style="padding: 20px" class="wrapper_container">
         <img
-          style="width: 400px"
+          style="max-width: 350px"
           src="./images/Claudia Webseite.JPG"
           alt="Claudia"
         />
@@ -90,7 +91,11 @@
         Ausnahmslos und unabhängig von der Größe und Beschaffenheit Ihrer
         Immobilie.
       </p>
-      <div style="display: flex; margin-bottom: 50px" class="wrapper_container">
+      <div
+        class="temp_display"
+        style="margin-bottom: 50px"
+        class="wrapper_container"
+      >
         <div class="text_container">
           <h3 style="margin-bottom: 30px; margin-top: 0; margin-right: 20px">
             EMOTIONEN BEEINFLUSSEN UNSERE HANDLUNGEN UND ES GIBT SELTEN EINE 2.
@@ -107,14 +112,14 @@
           </p>
         </div>
         <img
-          style="width: 50%"
+          style="width: 50%; min-width: 350px"
           src="./images/Hermeier-Immobilien-glueckliches-Paar.jpg"
           alt=""
         />
       </div>
       <ul
+        class="temp_display"
         style="
-          display: flex;
           gap: 20px;
           list-style: none;
           padding: 0;
@@ -129,7 +134,8 @@
             box-shadow: 0px 0px 15px 3px rgba(243, 243, 243, 1);
             border-radius: 10px;
             width: 33%;
-            padding: 0 20px;
+            min-width: 350px;
+            padding: 5px 20px;
           "
         >
           <h4>
@@ -151,7 +157,8 @@
             box-shadow: 0px 0px 15px 3px rgba(243, 243, 243, 1);
             border-radius: 10px;
             width: 33%;
-            padding: 0 20px;
+            min-width: 350px;
+            padding: 5px 20px;
           "
         >
           <p>
@@ -168,7 +175,8 @@
             box-shadow: 0px 0px 15px 3px rgba(243, 243, 243, 1);
             border-radius: 10px;
             width: 33%;
-            padding: 0 20px;
+            min-width: 350px;
+            padding: 5px 20px;
           "
         >
           <h4>INDIVIDUELL, LÖSUNGSORIENTIERT UND IDEENREICH</h4>
@@ -188,15 +196,11 @@
 
     <!-- CONTAKT -->
     <section
-      style="
-        font-family: Raleway, Arial;
-        width: 1023px;
-        margin: 0 auto;
-        color: #6f6864;
-      "
+      class="section"
+      style="font-family: Raleway, Arial; margin: 0 auto; color: #6f6864"
     >
-      <div style="display: flex; justify-content: space-between">
-        <address style="width: 49%">
+      <div class="temp_display" style="justify-content: space-between">
+        <address style="width: 49%; min-width: 350px">
           <h3
             style="color: #000; border-bottom: 1px solid #000; font-weight: 100"
           >
@@ -250,7 +254,7 @@
             </a>
           </p>
         </address>
-        <div style="width: 49%">
+        <div style="width: 49%; min-width: 350px">
           <h3 style="color: #000; font-weight: 100">Öffnungszeiten</h3>
           <table style="font-size: 12px; width: 100%">
             <tr style="background-color: #f9f9f9">
@@ -378,7 +382,7 @@
           </table>
         </div>
       </div>
-      <div id="map" style="width: 50%; margin-bottom: 40px">
+      <div id="map" style="width: 50%; margin-bottom: 40px; min-width: 350px">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1676.499915626554!2d8.709211744234878!3d52.21685720518595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ba0d8f5f066061%3A0x4688a91668305ea2!2zTMO8YmJlY2tlciBTdHIuIDEyOSwgMzI1ODQgTMO2aG5lLCDQndGW0LzQtdGH0YfQuNC90LA!5e0!3m2!1suk!2sua!4v1693869111230!5m2!1suk!2sua"
           width="100%"
@@ -402,7 +406,7 @@
           >Wegbeschreibung öffnen</a
         >
       </p>
-      <p style="color: #000; margin-top: 50px; font-family: Raleway, Arial">
+      <p style="color: #000; margin-top: 70px; font-family: Raleway, Arial">
         Kontaktieren Sie uns über unser Kontaktformular
       </p>
     </section>
@@ -411,16 +415,16 @@
     <footer style="background-color: #6c6560; padding-top: 10px" ;>
       <div
         style="
-          padding: 20px;
           max-width: 1023px;
+          padding: 20px;
           margin: 0 auto;
           text-align: center;
           border-top: 1px solid #fff;
         "
       >
         <ul
+          class="temp_display"
           style="
-            display: flex;
             gap: 10px;
             justify-content: space-between;
             list-style: none;
