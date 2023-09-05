@@ -1,12 +1,24 @@
 .temp_display {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.td {
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
 @media screen and (min-width: 1023px) {
   .temp_display {
     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
   }
   .section {
     max-width: 1023px;
+  }
+  .td {
+    margin: 0;
   }
 }
