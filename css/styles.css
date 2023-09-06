@@ -9,13 +9,13 @@
   margin-top: 20px;
 }
 
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1270px) {
   .flex_direction {
     flex-direction: row;
     align-items: flex-start;
   }
   .container {
-    max-width: 1023px;
+    max-width: 1270px;
   }
   #map {
     margin: 0;
