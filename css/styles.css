@@ -1,23 +1,153 @@
+body {
+  margin: 0;
+}
+
+section {
+  font-family: 'Open Sans', Arial;
+  margin: 0 auto;
+  color: #6f6864;
+  padding: 15px;
+}
+
+.title {
+  font-family: Raleway, Arial;
+  font-weight: 600 !important;
+  font-size: 20px;
+  text-align: center;
+  margin: 10px auto;
+}
+.hero_container {
+  padding: 10px;
+}
+
+.hero_image {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.hero_text_container {
+  padding: 0;
+}
+.hero_title {
+  margin: 0;
+  font-size: 20px;
+}
+.hero_parahraph {
+  text-align: start;
+}
+.hero_contact_link {
+  display: contents;
+  text-decoration: none;
+  color: #000;
+}
+.contact_link_icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 15px;
+}
+
+.group_container {
+  margin-bottom: 50px;
+}
+
+.group_title {
+  margin-top: 0;
+}
+.group_paragraph {
+  font-weight: 400;
+}
+
+.group_image {
+  width: 100%;
+}
+.group_list {
+  gap: 20px;
+  justify-content: space-between;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.group_list_item {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  justify-content: center;
+  padding: 5px 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px 3px rgba(243, 243, 243, 1);
+}
+
+.group_bottom_text {
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+}
+
+.address_title {
+  font-style: normal;
+  font-weight: 300;
+  padding-bottom: 5px;
+  color: #000;
+  font-size: 20px;
+}
+.table {
+  font-size: 12px;
+  width: 100%;
+}
+
+/* OTHER */
 .flex_direction {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 #map {
   margin: 0 auto;
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 
-@media screen and (min-width: 1270px) {
+@media screen and (min-width: 970px) {
   .flex_direction {
     flex-direction: row;
     align-items: flex-start;
   }
-  .container {
-    max-width: 1270px;
+  .title {
+    font-size: 32px;
   }
+  .hero_text_container {
+    padding: 0 30px;
+  }
+  .hero_image {
+    max-width: 400px;
+  }
+  .hero_parahraph {
+    text-align: justify;
+  }
+
+  .group_list_item {
+    width: 33%;
+    height: 350px;
+  }
+  .group_paragraph {
+    padding-right: 20px;
+  }
+
+  .address_container {
+    width: 49%;
+    padding: 0 5px;
+  }
+  .table {
+    font-size: 16px;
+  }
+  .container {
+    max-width: 970px;
+  }
+
   #map {
+    width: 49%;
     margin: 0;
     margin-top: 10px;
   }
