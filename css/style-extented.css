@@ -1,12 +1,42 @@
 .img_wrapper {
   width: 100%;
 }
+.head_title {
+  font-size: 22px;
+  line-height: 22px;
+  margin: 0 0 15px 0;
+}
+.head_paragraph {
+  font-size: 16px;
+  max-width: 1050px;
+  font-family: 'Open Sans';
+}
+.paragraph {
+  font-size: 16px;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-family: 'Helvetica Neue';
+  font-size: 18px;
+  margin: 0 0 15px 0;
+}
+h3 {
+  font-family: 'Helvetica Neue';
+  font-size: 16px;
+  margin: 0 0 15px 0;
+}
+/* universal class */
 
 .tac {
-  text-align: center;
+  text-align: justify;
 }
-.mb50 {
-  margin-bottom: 50px;
+.mb30 {
+  margin-bottom: 30px;
+}
+.mb80 {
+  margin: 0 auto;
+  margin-bottom: 80px;
 }
 .mt0 {
   margin-top: 0;
@@ -14,12 +44,13 @@
 .mb0 {
   margin-bottom: 0;
 }
-.pr20 {
+.pr25 {
   font-weight: 400;
 }
 .pl30 {
   padding-left: 30px;
 }
+
 .header_page {
   background-image: url('../images/bg1.jpg');
   background-repeat: no-repeat;
@@ -34,22 +65,65 @@
   text-align: center;
 }
 
+.haus_list {
+  gap: 20px;
+  justify-content: space-between;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+.haus_list_item {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 26px;
+  justify-content: flex-start;
+  padding: 34px 39px 0 38px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px 3px rgba(243, 243, 243, 1);
+}
+
 /* MEDIA */
 @media screen and (min-width: 768px) {
+  .head_title {
+    font-size: 42px;
+    line-height: 48px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  .tac {
+    text-align: center;
+  }
+
   .header_page {
     padding: 200px;
   }
-  .pr20 {
-    padding-right: 20px;
+  .pr25 {
+    padding-right: 25px;
+  }
+  .pl40 {
+    padding-left: 40px;
   }
 }
-@media screen and (min-width: 970px) {
-  .img_wrapper {
-    width: 45%;
+@media screen and (min-width: 1200px) {
+  .pl150 {
+    font-family: 'Open Sans';
+    padding-left: 150px;
   }
-
-  .group_list_item {
+  .unik1 {
+    width: 1134px;
+  }
+  .img_wrapper {
+    width: 545px;
+  }
+  .haus_list_item {
     justify-content: flex-start;
-    height: 450px;
+    max-width: 390px;
+    height: 445px;
   }
 }
