@@ -51,25 +51,55 @@
     <!-- FAVICON END -->
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/style-extented.css" />
+    <link rel="stylesheet" href="./menu.css" />
   </head>
   <body>
+    <!-- header -->
+    <header class="header">
+      <button
+        style="
+          outline: none;
+          background-color: black;
+          color: white;
+          border: none;
+          border-radius: 10px;
+          padding: 10px;
+        "
+        id="toggleBtn"
+      >
+        Toggle Background Color
+      </button>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="immobilienmakler_bad_oeynhausen_löhne.html"
+              >Footer Favorit – 3</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="immobilienmakler_löhne.html">Footer Favorit – 4</a>
+          </li>
+          <li class="nav-item">
+            <a href="immobilienmakler_löhne_und_umgebung.html"
+              >Footer Favorit – 5</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="haus_kaufen_löhne-gohfeld.html">Footer Favorit – 6</a>
+          </li>
+          <li class="nav-item">
+            <a href="immobilienmakler_bad_oeynhausen.html"
+              >Footer Favorit – 7</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="menu-toggle">☰</div>
+    </header>
+    <!-- header end -->
     <!-- header page -->
     <section class="container" style="padding: 0">
-      <div class="header_page tac">
-        <button
-          style="
-            outline: none;
-            background-color: black;
-            color: white;
-            border: none;
-            border-radius: 10px;
-            padding: 10px;
-          "
-          id="toggleBtn"
-        >
-          Toggle Background Color
-        </button>
-      </div>
+      <div class="header_page tac"></div>
     </section>
     <!-- header page END -->
     <!-- haus IN  -->
@@ -242,6 +272,11 @@
       </div>
     </section>
     <!-- Kontaktieren END -->
+    <!-- btn up -->
+    <button id="scrollTopBtn" class="scroll-top-btn">↑</button>
+    <!-- btn up END -->
+
+    <!-- <script> -->
     <script>
       const body = document.body;
       const btn = document.getElementById('toggleBtn');
@@ -267,5 +302,37 @@
         once: false,
       });
     </script>
+    <script>
+      const menuToggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('.nav');
+      menuToggle.addEventListener('click', () => {
+        nav.style.display =
+          nav.style.display === 'none' || nav.style.display === ''
+            ? 'block'
+            : 'none';
+      });
+    </script>
+    <script>
+      const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+      // Коли користувач проскролює на 20px від верху сторінки, показати кнопку
+      window.onscroll = function () {
+        if (
+          document.body.scrollTop > 200 ||
+          document.documentElement.scrollTop > 200
+        ) {
+          scrollTopBtn.style.display = 'block';
+        } else {
+          scrollTopBtn.style.display = 'none';
+        }
+      };
+
+      // При натисканні на кнопку, прокрутити сторінку до початку
+      scrollTopBtn.addEventListener('click', function () {
+        document.body.scrollTop = 0; // Для Safari
+        document.documentElement.scrollTop = 0; // Для Chrome, Firefox, IE і Opera
+      });
+    </script>
+    <!-- <script END> -->
   </body>
 </html>
