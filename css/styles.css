@@ -1,13 +1,15 @@
 body {
   margin: 0;
+  color: #4d4d4a;
 }
-
+a {
+  color: #4d4d4a;
+}
 /* universal class */
 
 section {
   font-family: 'Open Sans', Arial;
   margin: 0 auto;
-  color: #6f6864;
   padding: 15px;
   line-height: 26px;
 }
@@ -44,7 +46,6 @@ section {
 .hero_contact_link {
   display: contents;
   text-decoration: none;
-  color: #000;
 }
 .contact_link_icon {
   width: 15px;
@@ -92,7 +93,6 @@ section {
 .hero_contact_link {
   display: contents;
   text-decoration: none;
-  color: #000;
 }
 .contact_link_icon {
   width: 15px;
