@@ -35,7 +35,7 @@ html {
   right: 15px;
   z-index: 99;
 }
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
   .nav {
     display: none;
     width: 100%;
@@ -54,7 +54,8 @@ html {
     display: block;
   }
 }
-@media (min-width: 768px) {
+
+@media screen and (min-width: 1200px) {
   .nav-list {
     height: 20px;
   }

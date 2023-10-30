@@ -26,6 +26,7 @@
 .undLohne_list {
   gap: 20px;
   justify-content: space-between;
+  align-items: center;
   list-style: none;
   text-align: center;
   padding: 0;
