@@ -1,0 +1,4 @@
+nav a:hover {
+  padding-top: 28px;
+  border-bottom: 1px solid var(--brend-color);
+}
