@@ -1,7 +1,8 @@
 .head_title {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 22px;
   margin: 0 0 15px 0;
+  font-weight: 600;
 }
 .head_paragraph {
   font-size: 16px;
@@ -65,9 +66,9 @@ h3 {
 .mb30 {
   margin-bottom: 30px;
 }
-.mb80 {
+.mb40 {
   margin: 0 auto;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 .mt0 {
   margin-top: 0;
@@ -87,6 +88,7 @@ h3 {
 /* MEDIA */
 @media screen and (min-width: 768px) {
   .head_title {
+    margin-top: 50px !important;
     font-size: 42px;
     line-height: 48px;
   }
